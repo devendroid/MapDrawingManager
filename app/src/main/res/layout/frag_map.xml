@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <fragment
+            android:id="@+id/map_frag"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/semi_black"
+            android:elevation="4dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_polygon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_polygon_24dp"
+                android:tint="@color/colorAccent" />
+
+            <ImageView
+                android:id="@+id/iv_polyline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_polyline_24dp"
+                android:tint="@color/semi_white" />
+
+            <ImageView
+                android:id="@+id/iv_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_circle_24dp"
+                android:tint="@color/semi_white" />
+
+            <ImageView
+                android:id="@+id/iv_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_pin_24dp"
+                android:tint="@color/semi_white" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:background="@color/semi_white" />
+
+            <TextView
+                android:id="@+id/tv_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="16dp"
+                android:gravity="right"
+                android:textColor="#ffffffff"
+                android:textSize="16sp"
+                tools:text="Size: 123.23 sq feet" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tools"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:background="@color/colorAccent"
+            android:textColor="#ffffff"
+            android:alpha=".8"
+            android:text="Clear" />
+
+    </RelativeLayout>
+
+
+
