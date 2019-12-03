@@ -14,9 +14,7 @@ MDM is a library with the help of we can draw many different shapes like polygon
 ![MapDrawingManager](/assets/mdm1.0.0.gif)
 
 ## Dependency
-- Add the dependencies to your gradle files:
-
-#### Add it in your root build.gradle at the end of repositories
+- Add it in your root build.gradle at the end of repositories
 ```gradle
    allprojects {
        repositories {
@@ -25,8 +23,7 @@ MDM is a library with the help of we can draw many different shapes like polygon
     	}
     }
 ```
-
-#### Add the dependency
+- Add the dependency
 ```gradle
     dependencies {
          implementation 'com.github.devendroid:MapDrawingManager:1.0.0'
