@@ -1,4 +1,5 @@
 # Map Drawing Manager
+[![](https://jitpack.io/v/devendroid/MapDrawingManager.svg)](https://jitpack.io/#devendroid/MapDrawingManager)
 MDM is a library with the help of we can draw many different shapes like polygon, polyline and many more on the google map with editable mode.
 
 ## Key Features:
@@ -11,6 +12,27 @@ MDM is a library with the help of we can draw many different shapes like polygon
 
 ## Sample app using MDM:
 ![MapDrawingManager](/assets/mdm1.0.0.gif)
+
+## Dependency
+- Add the dependencies to your gradle files:
+
+#### Add it in your root build.gradle at the end of repositories
+```gradle
+   allprojects {
+       repositories {
+    	...
+    	maven { url 'https://jitpack.io' }
+    	}
+    }
+```
+
+#### Add the dependency
+```gradle
+    dependencies {
+         implementation 'com.github.devendroid:MapDrawingManager:1.0.0'
+     }
+
+```
 
 ## Usage
 ```java
